@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.8"?><target includeMode="feature" name="CommonReality Base Target">
+	<locations>
+		<location path="${eclipse_home}" type="Profile"/>
+	</locations>
+	<includeBundles>
+		<plugin id="org.apache.commons.cli"/>
+		<plugin id="org.apache.commons.codec"/>
+		<plugin id="org.apache.commons.collections"/>
+		<plugin id="org.apache.commons.lang"/>
+		<plugin id="org.apache.commons.logging"/>
+		<plugin id="org.apache.commons.math"/>
+		<plugin id="org.apache.commons.pool"/>
+		<plugin id="org.eclipse.collections"/>
+		<plugin id="javax.xml"/>
+		<plugin id="org.eclipse.core.runtime"/>
+		<plugin id="org.eclipse.pde.core"/>
+	</includeBundles>
+</target>
