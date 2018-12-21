@@ -4,8 +4,8 @@
   <artifactId>org.commonreality.update</artifactId>
   <parent>
 		<groupId>org.commonreality</groupId>
-		<artifactId>org.commonreality.osgi.distro</artifactId>
-		<version>1.5.0-SNAPSHOT</version>
+		<artifactId>org.commonreality.distro</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
 		<relativePath>../org.commonreality.osgi.distro/pom.xml</relativePath>
 	</parent>
 

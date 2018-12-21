@@ -4,32 +4,15 @@
 	<artifactId>org.commonreality.netty.core</artifactId>
 	<parent>
 		<groupId>org.commonreality</groupId>
-		<artifactId>org.commonreality.osgi.distro</artifactId>
-		<version>1.5.0-SNAPSHOT</version>
+		<artifactId>org.commonreality.distro</artifactId>
+		<version>1.5.1-SNAPSHOT</version>
 		<relativePath>../org.commonreality.osgi.distro/pom.xml</relativePath>
 	</parent>
 
 	<packaging>eclipse-plugin</packaging>
 
-	
-
-
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>test</testSourceDirectory>
 		<plugins>
-
-		
-
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-
 			<!-- unpack netty dependencies, which we will repackage in our jar -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -50,7 +33,7 @@
 								</artifactItem>
 							</artifactItems>
 							<outputDirectory>${project.build.directory}/../lib</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
+							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWrite>true</overWrite>
 						</configuration>
