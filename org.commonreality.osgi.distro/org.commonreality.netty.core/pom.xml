@@ -6,7 +6,6 @@
 		<groupId>org.commonreality</groupId>
 		<artifactId>org.commonreality.distro</artifactId>
 		<version>1.5.1-SNAPSHOT</version>
-		<relativePath>../org.commonreality.osgi.distro/pom.xml</relativePath>
 	</parent>
 
 	<packaging>eclipse-plugin</packaging>

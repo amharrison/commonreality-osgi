@@ -99,11 +99,11 @@
 	</build>
 
 	<modules>
-		<module>../org.commonreality.netty.core</module>
+		<module>org.commonreality.netty.core</module>
 
-		<module>../org.commonreality.osgi.feature</module>
+		<module>org.commonreality.osgi.feature</module>
 
-		<module>../org.commonreality.update</module>
+		<module>org.commonreality.update</module>
 		<module>org.commonreality.api</module>
 		<module>org.commonreality.core</module>
 		<module>org.commonreality.modalities</module>
