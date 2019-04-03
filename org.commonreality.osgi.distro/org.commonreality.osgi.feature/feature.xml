@@ -85,16 +85,19 @@ If the Library as you received it specifies that a proxy can decide whether futu
    </url>
 
    <requires>
-      <import plugin="org.apache.commons.logging"/>
-      <import plugin="org.commonreality.api" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.time" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.netty.core" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.commonreality.api" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.modalities.spatial" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.netty" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.sensors.xml" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.slf4j.api"/>
       <import plugin="org.commonreality.net" version="1.5.0" match="greaterOrEqual"/>
       <import plugin="org.commonreality.modalities" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.netty.core" version="1.5.0" match="greaterOrEqual"/>
       <import plugin="org.commonreality.core" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.sensors" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.sensors.base" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.commonreality.sensors" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.sensors.base" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.time" version="1.5.1" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -179,8 +182,8 @@ If the Library as you received it specifies that a proxy can decide whether futu
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
-    <plugin
+
+   <plugin
          id="org.commonreality.netty.core.source"
          download-size="0"
          install-size="0"
@@ -261,6 +264,6 @@ If the Library as you received it specifies that a proxy can decide whether futu
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>      
+         unpack="false"/>
 
 </feature>

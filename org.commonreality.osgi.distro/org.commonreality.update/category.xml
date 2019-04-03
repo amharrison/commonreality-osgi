@@ -4,9 +4,9 @@
       CommonReality Update Site
    </description>
    <feature url="features/org.commonreality.osgi.feature_1.5.1.qualifier.jar" id="org.commonreality.osgi.feature" version="1.5.1.qualifier">
-      <category name="org.commonreality"/>
+      <category name="org.jactr"/>
    </feature>
-   <category-def name="org.commonreality" label="CommonReality">
+   <category-def name="org.jactr" label="jACT-R : Tools and Runtime">
       <description>
          Provides interface abstraction to simulation providers for cognitive modeling.
       </description>
