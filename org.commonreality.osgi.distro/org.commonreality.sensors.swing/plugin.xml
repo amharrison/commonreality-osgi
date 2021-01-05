@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.commonreality.api.sensors">
+      <sensor
+            class="org.commonreality.sensors.swing.DefaultSwingSensor"
+            clock-owner="false"
+            name="SwingSensor">
+         <description>General sensor that handles Java GUIs. Used in conjunction with the KeyboardSensor. This version runs faster than realtime.</description>
+         <property
+               name="DotsPerCM"
+               value="86.8">
+            <description>
+               Pixels per CM of your screen.
+            </description>
+         </property>
+         <property
+               name="DistanceToScreenCM"
+               value="33">
+            <description>
+               Modeled physical distance to the screen.
+            </description>
+         </property>
+         <property
+               name="UseFixationTracker"
+               value="false">
+            <description>
+               description body text
+            </description>
+         </property>
+      </sensor>
+      <sensor
+            class="org.commonreality.sensors.swing.RealtimeSwingSensor"
+            clock-owner="true"
+            name="Realtime SwingSensor">
+         <description>General sensor that handles Java GUIs. Used in conjunction with the KeyboardSensor. This version runs at realtime, making it easier to debug.</description>
+         <property
+               name="DotsPerCM"
+               value="86.8">
+            <description>
+               Pixels per CM of your screen.
+            </description>
+         </property>
+         <property
+               name="DistanceToScreenCM"
+               value="33">
+            <description>
+               Modeled physical distance to the screen.
+            </description>
+         </property>
+         <property
+               name="UseFixationTracker"
+               value="false">
+            <description>
+               description body text
+            </description>
+         </property>
+      </sensor>
+   </extension>
+
+</plugin>
