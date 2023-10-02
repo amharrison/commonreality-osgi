@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Swing interface
+Bundle-SymbolicName: org.commonreality.sensors.swing;singleton:=true
+Bundle-Version: 1.5.1.qualifier
+Require-Bundle: org.slf4j.api,
+ org.commonreality.api;bundle-version="1.5.0",
+ org.commonreality.core;bundle-version="1.5.0",
+ org.commonreality.net;bundle-version="1.5.0",
+ org.commonreality.modalities;bundle-version="1.5.0",
+ org.commonreality.sensors.base;bundle-version="1.5.0",
+ org.commonreality.sensors;bundle-version="1.5.0",
+ org.commonreality.time;bundle-version="1.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: org.commonreality.osgi
+Eclipse-BuddyPolicy: registered
+Eclipse-RegisterBuddy: org.apache.log4j
+Bundle-ClassPath: .
+Export-Package: org.commonreality.sensors.swing,
+ org.commonreality.sensors.swing.internal,
+ org.commonreality.sensors.swing.listeners,
+ org.commonreality.sensors.swing.processors
