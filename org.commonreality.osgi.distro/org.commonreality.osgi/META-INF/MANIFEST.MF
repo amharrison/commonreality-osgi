@@ -4,7 +4,6 @@ Bundle-Name: Provider for OSGi environment
 Bundle-SymbolicName: org.commonreality.osgi;singleton:=true
 Bundle-Version: 1.5.1.qualifier
 Require-Bundle: org.eclipse.core.runtime,
- org.commonreality.api;bundle-version="1.5.1",
  org.commonreality.core;bundle-version="1.5.1",
  org.commonreality.modalities;bundle-version="1.5.1",
  org.commonreality.modalities.spatial;bundle-version="1.5.1",
@@ -13,7 +12,9 @@ Require-Bundle: org.eclipse.core.runtime,
  org.commonreality.sensors;bundle-version="1.5.1",
  org.commonreality.sensors.base;bundle-version="1.5.1",
  org.commonreality.sensors.xml;bundle-version="1.5.1",
- org.commonreality.time;bundle-version="1.5.1"
+ org.commonreality.time;bundle-version="1.5.1",
+ org.commonreality.sensors.swing;bundle-version="1.5.1",
+ org.commonreality.api;bundle-version="1.5.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.commonreality.osgi
 Eclipse-BuddyPolicy: registered

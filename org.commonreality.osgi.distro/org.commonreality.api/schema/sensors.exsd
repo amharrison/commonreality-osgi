@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Schema file written by PDE -->
-<schema targetNamespace="org.commonreality.osgi" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema targetNamespace="org.commonreality.api" xmlns="http://www.w3.org/2001/XMLSchema">
 <annotation>
       <appInfo>
-         <meta.schema plugin="org.commonreality.osgi" id="sensor" name="CommonReality Sensor Implementation"/>
+         <meta.schema plugin="org.commonreality.api" id="sensors" name="CommonReality Sensor"/>
       </appInfo>
       <documentation>
          Describes a sensor that can be connected to CommonReality
@@ -120,7 +120,7 @@
          &lt;extension
          id=&quot;org.commonreality.sensors.xml.XMLSensor&quot;
          name=&quot;XMLSensor&quot;
-         point=&quot;org.commonreality.sensor&quot;&gt;
+         point=&quot;org.commonreality.api.sensors&quot;&gt;
       &lt;sensor class=&quot;org.commonreality.sensors.xml.XMLSensor&quot;&gt;
          &lt;description&gt;General sensor that sends sensor data read from an XML file&lt;/description&gt;
          &lt;property

@@ -95,12 +95,43 @@
 					<pomDependencies>consider</pomDependencies>
 				</configuration>
 			</plugin>
+
+
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-source-feature-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>source-feature</id>
+						<phase>package</phase>
+						<goals>
+							<goal>source-feature</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>attach-p2-metadata</id>
+						<phase>package</phase>
+						<goals>
+							<goal>p2-metadata</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
 	<modules>
 		<module>org.commonreality.netty.core</module>
-
 		<module>org.commonreality.osgi.feature</module>
 		<module>org.commonreality.osgi</module>
 		<module>org.commonreality.update</module>
@@ -113,6 +144,7 @@
 		<module>org.commonreality.sensors</module>
 		<module>org.commonreality.sensors.base</module>
 		<module>org.commonreality.sensors.xml</module>
+		<module>org.commonreality.sensors.swing</module>
 		<module>org.commonreality.time</module>
 	</modules>
 </project>

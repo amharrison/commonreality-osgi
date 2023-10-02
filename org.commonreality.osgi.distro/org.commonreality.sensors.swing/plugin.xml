@@ -26,7 +26,14 @@
                name="UseFixationTracker"
                value="false">
             <description>
-               description body text
+               Provides fixation cross hairs and debugging graphics.
+            </description>
+         </property>
+         <property
+               name="ConfigurationConsumer"
+               value=" ">
+            <description>
+               Implementation of Consumer DefaultSwingSensor that is given a chance to configure the sensor before running.
             </description>
          </property>
       </sensor>
@@ -54,6 +61,13 @@
                value="false">
             <description>
                description body text
+            </description>
+         </property>
+         <property
+               name="ConfigurationConsumer"
+               value=" ">
+            <description>
+               Implementation of Consumer DefaultSwingSensor that is given a chance to configure the sensor before running.
             </description>
          </property>
       </sensor>

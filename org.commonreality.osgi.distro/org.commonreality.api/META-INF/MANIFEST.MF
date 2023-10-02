@@ -3,9 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Provider for OSGi environment
 Bundle-SymbolicName: org.commonreality.api;singleton:=true
 Bundle-Version: 1.5.1.qualifier
-Require-Bundle: org.slf4j.api
+Require-Bundle: org.slf4j.api,
+ org.eclipse.core.runtime;bundle-version="3.14.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Automatic-Module-Name: org.commonreality.osgi
+Automatic-Module-Name: org.commonreality.api
 Eclipse-BuddyPolicy: registered
 Eclipse-RegisterBuddy: org.apache.log4j
 Bundle-ClassPath: .

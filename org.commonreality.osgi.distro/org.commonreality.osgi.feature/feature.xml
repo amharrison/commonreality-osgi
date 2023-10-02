@@ -85,19 +85,20 @@ If the Library as you received it specifies that a proxy can decide whether futu
    </url>
 
    <requires>
+      <import plugin="org.slf4j.api"/>
+      <import plugin="org.commonreality.net" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.modalities" version="1.5.0" match="greaterOrEqual"/>
       <import plugin="org.commonreality.netty.core" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.core" version="1.5.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.commonreality.api" version="1.5.1" match="greaterOrEqual"/>
       <import plugin="org.commonreality.modalities.spatial" version="1.5.1" match="greaterOrEqual"/>
       <import plugin="org.commonreality.netty" version="1.5.1" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.sensors.xml" version="1.5.1" match="greaterOrEqual"/>
-      <import plugin="org.slf4j.api"/>
-      <import plugin="org.commonreality.net" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.modalities" version="1.5.0" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.core" version="1.5.0" match="greaterOrEqual"/>
       <import plugin="org.commonreality.sensors" version="1.5.1" match="greaterOrEqual"/>
       <import plugin="org.commonreality.sensors.base" version="1.5.1" match="greaterOrEqual"/>
-      <import plugin="org.commonreality.time" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.sensors.xml" version="1.5.1" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.time" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.commonreality.sensors.swing" version="1.5.1" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -182,88 +183,14 @@ If the Library as you received it specifies that a proxy can decide whether futu
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
-   <plugin
-         id="org.commonreality.netty.core.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.commonreality.api.source"
+         
+    <plugin
+         id="org.commonreality.sensors.swing"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
+         unpack="false"/>      
 
-   <plugin
-         id="org.commonreality.core.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.modalities.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.modalities.spatial.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.net.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.netty.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.sensors.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.sensors.base.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.sensors.xml.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.time.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.commonreality.osgi.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+  
 
 </feature>
