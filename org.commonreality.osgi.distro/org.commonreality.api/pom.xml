@@ -18,7 +18,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.1.1</version>
+				<version>3.6.0</version>
 				<executions>
 					<!-- for source generation we unpack the source, then zip it up as org.commonreality.osg_version/src.zip. 
 						Our manifest points to itself for its source bundle. Who knows if this will 
@@ -35,8 +35,9 @@
 							<includeArtifactIds>org.commonreality.api</includeArtifactIds>
 							<classifier>sources</classifier>
 							<failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-							<outputDirectory>${project.build.directory}/../generated-src/</outputDirectory>
-							<overWrite>true</overWrite>
+							<outputDirectory>${project.directory}/../generated-src/</outputDirectory>
+							<overWriteIfNewer>true</overWriteIfNewer>
+							<excludes>**/maven/</excludes>
 						</configuration>
 					</execution>
 				</executions>
@@ -50,6 +51,7 @@
 			<groupId>org.commonreality</groupId>
 			<artifactId>org.commonreality.api</artifactId>
 			<version>1.5.0-SNAPSHOT</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

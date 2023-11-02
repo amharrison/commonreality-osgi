@@ -31,8 +31,9 @@
 							<includeArtifactIds>org.commonreality.net</includeArtifactIds>
 							<classifier>sources</classifier>
 							<failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-							<outputDirectory>${project.build.directory}/../generated-src/</outputDirectory>
-							<overWrite>true</overWrite>
+							<outputDirectory>${project.directory}/../generated-src/</outputDirectory>
+							<overWriteIfNewer>true</overWriteIfNewer>
+							<excludes>**/maven/</excludes>
 						</configuration>
 					</execution>
 				</executions>
@@ -46,6 +47,13 @@
 			<groupId>org.commonreality</groupId>
 			<artifactId>org.commonreality.net</artifactId>
 			<version>1.5.0-SNAPSHOT</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.commonreality</groupId>
+					<artifactId>org.commonreality.api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 </project>

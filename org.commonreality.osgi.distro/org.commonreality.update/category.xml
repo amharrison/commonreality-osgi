@@ -9,10 +9,10 @@
    <feature id="org.commonreality.osgi.feature.source" version="1.5.1.qualifier">
       <category name="source_components"/>
    </feature>
-   <category-def name="org.jactr" label="jACT-R : Tools and Runtime">
+   <category-def name="source_components" label="jACT-R : Developer Resources"/>
+   <category-def name="org.jactr" label="jACT-R : Core">
       <description>
          Provides interface abstraction to simulation providers for cognitive modeling.
       </description>
    </category-def>
-   <category-def name="source_components" label="jACT-R : Developer Resources"/>
 </site>

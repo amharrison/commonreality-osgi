@@ -9,10 +9,7 @@
 		<artifactId>org.commonreality.distro</artifactId>
 		<version>1.5.1-SNAPSHOT</version>
 	</parent>
-	<groupId>org.commonreality.sensors.swing</groupId>
 	<artifactId>org.commonreality.sensors.swing</artifactId>
-	<version>1.5.1-SNAPSHOT</version>
-	<name>org.commonreality.sensors.swing</name>
 	<packaging>eclipse-plugin</packaging>
 	<build>
 		<sourceDirectory>generated-src</sourceDirectory>
@@ -38,8 +35,9 @@
 							<includeArtifactIds>org.commonreality.sensors.swing</includeArtifactIds>
 							<classifier>sources</classifier>
 							<failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-							<outputDirectory>${project.build.directory}/../generated-src/</outputDirectory>
+							<outputDirectory>${project.directory}/../generated-src/</outputDirectory>
 							<overWrite>true</overWrite>
+							<excludes>**/maven/</excludes>
 						</configuration>
 					</execution>
 				</executions>
@@ -53,6 +51,7 @@
 			<groupId>org.commonreality</groupId>
 			<artifactId>org.commonreality.sensors.swing</artifactId>
 			<version>1.5.0-SNAPSHOT</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

@@ -31,8 +31,9 @@
 							<includeArtifactIds>org.commonreality.modalities.spatial</includeArtifactIds>
 							<classifier>sources</classifier>
 							<failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-							<outputDirectory>${project.build.directory}/../generated-src/</outputDirectory>
+							<outputDirectory>${project.directory}/../generated-src/</outputDirectory>
 							<overWrite>true</overWrite>
+							<excludes>**/maven/</excludes>
 						</configuration>
 					</execution>
 				</executions>
@@ -46,6 +47,7 @@
 			<groupId>org.commonreality</groupId>
 			<artifactId>org.commonreality.modalities.spatial</artifactId>
 			<version>1.5.0-SNAPSHOT</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	
